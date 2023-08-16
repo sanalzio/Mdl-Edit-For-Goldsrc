@@ -9,4 +9,4 @@ Half-Life MDL Decompiler 1.2
 
 ## Images
 
-![Compile Menu](./Ekran Görüntüsü (694).png)
+![Compile Menu](./compile.png)
