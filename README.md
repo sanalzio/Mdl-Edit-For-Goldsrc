@@ -11,8 +11,8 @@ Half-Life MDL Decompiler 1.2
 
 ![Compile Menu](./compiel.png)
 ![Decompile Menu](./decompile.png)
-![Smd Compress Menu](./compress.png)
-![Smd Cut Menu](./cut.png)
-![Config Menu](./cfg.png)
-![Smd Reverse Menu](./rev.png)
 ![Test in game model Menu](./test.png)
+![Smd Cut Menu](./cut.png)
+![Smd Compress Menu](./compress.png)
+![Smd Reverse Menu](./rev.png)
+![Config Menu](./cfg.png)
