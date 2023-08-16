@@ -1,0 +1,6 @@
+last_selected_file:{None}
+last_tab:decomp
+moddir:C:/Program Files (x86)/Steam/steamapps/common/Half-Life/valve
+shortcut_dir:{None}
+start_by_selecting_a_file:{False}
+custom_studiomdl:{None}

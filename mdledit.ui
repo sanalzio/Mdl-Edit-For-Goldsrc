@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>569</width>
+    <height>385</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MdlEdit</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>mdledit.ico</normaloff>mdledit.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="filepath">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>471</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sfile">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>38</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="kosol">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>551</width>
+      <height>151</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="sekmeler">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>571</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="compmenu">
+     <attribute name="title">
+      <string>Compile</string>
+     </attribute>
+     <widget class="QPushButton" name="compbutton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Compile</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="decompmenu">
+     <attribute name="title">
+      <string>Decompile</string>
+     </attribute>
+     <widget class="QCheckBox" name="clqc">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>85</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Clear .qc</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="tristate">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="decompbutton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Decompile</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="testmenu">
+     <attribute name="title">
+      <string>Test in game</string>
+     </attribute>
+     <widget class="QPushButton" name="testbtn">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Test in game</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="cutmenu">
+     <attribute name="title">
+      <string>SmdCut</string>
+     </attribute>
+     <widget class="QPushButton" name="cutbutton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cut Smd</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ucgen">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Max Triangles</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ucgengirdi">
+      <property name="geometry">
+       <rect>
+        <x>115</x>
+        <y>85</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="compressmenu">
+     <attribute name="title">
+      <string>SmdCompress</string>
+     </attribute>
+     <widget class="QPushButton" name="compressbutton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Compress Smd</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="bolengirdi">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>85</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bolen">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Dividend figure</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="revmenu">
+     <attribute name="title">
+      <string>SmdReverse</string>
+     </attribute>
+     <widget class="QPushButton" name="revbutton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Reverse Smd</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="cfgmenu">
+     <attribute name="title">
+      <string>Config</string>
+     </attribute>
+     <widget class="QCheckBox" name="sbs">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>85</y>
+        <width>171</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Start by selecting a file.</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="stpath">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>150</y>
+        <width>351</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="cslab">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>150</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Custom StudioMdl:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="stfsel">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>148</y>
+        <width>21</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="savebtn">
+      <property name="geometry">
+       <rect>
+        <x>485</x>
+        <y>320</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="modlabel">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>230</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Half-Life Mod Dir.:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="moddir">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>230</y>
+        <width>351</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="smoddir">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>228</y>
+        <width>21</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="shpath">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>371</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="shsel">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>18</y>
+        <width>21</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="shlab">
+      <property name="geometry">
+       <rect>
+        <x>23</x>
+        <y>20</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Game Shotrcut:</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <zorder>sekmeler</zorder>
+   <zorder>filepath</zorder>
+   <zorder>kosol</zorder>
+   <zorder>sfile</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
