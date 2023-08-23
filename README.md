@@ -1,5 +1,5 @@
-# Mdl-Edit-For-Goldsrc
-### .mdl and .smd file or model edit tools program for goldsrc(Half-Life 1)
+# Mdl-Edit-For-Goldsrc-Verison-1.3
+### .mdl and .smd file or model edit tools program for goldsrc(Half-Life 1) verison 1.3
 
 **Author: Virtualzio**
 
