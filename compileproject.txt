@@ -1,2 +1,3 @@
 cd C:\Users\User\Desktop\mdledit
-C:\Users\User\AppData\Roaming\Python\Python311\Scripts\pyinstaller.exe --onefile --noconsole --icon=mdledit.ico MdlEdit.py
+C:\Users\User\AppData\Roaming\Python\Python311\Scripts\pyinstaller.exe --noconsole --icon=mdledit.ico MdlEdit.py
+pyinstaller --noconsole --icon=mdledit.ico C:\Users\User\Desktop\mdledit\MdlEdit.py

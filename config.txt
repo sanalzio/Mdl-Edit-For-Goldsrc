@@ -1,6 +1,7 @@
-last_selected_file:{None}
-last_tab:decomp
+last_selected_file:C:/Users/User/Desktop/ruyiKnife/iden1.SMD
+last_tab:exif
 moddir:C:/Program Files (x86)/Steam/steamapps/common/Half-Life/valve
-shortcut_dir:{None}
+shortcut_dir:C:/Users/User/Desktop/Games/Counter Strike 1.6 No Steam.lnk
 start_by_selecting_a_file:{False}
-custom_studiomdl:{None}
+custom_studiomdl:C:/Users/User/Desktop/studiomdl.exe
+clear.qc:2
