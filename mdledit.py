@@ -181,11 +181,14 @@ class CutomUi_MainWindow(Ui_MainWindow):
                     origqc.pop(lindex)
                 if "$eyeposition" in l:
                     origqc.pop(lindex)
-            if "\n" == l:
-                if origqc[origqc.index(l)+1] == "\n":
-                    origqc.pop(lindex)
+        origqc="".join(origqc)
+        while "\n\n\n" in origqc:
+            origqc=origqc.replace("\n\n\n", "\n\n")
+        while origqc.endswith("\n\n"):
+            origqc=origqc[:-2]
+        origqc+="\n"
         with open(filename.lower().replace(".mdl", ".qc"), "w", encoding="utf-8") as f:
-            f.writelines(origqc)
+            f.write(origqc)
             self.wo("QC Script edited.")
     def cutter(self,filename, max_triangles):
         if filename == "":
